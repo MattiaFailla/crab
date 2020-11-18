@@ -7,7 +7,7 @@
     / /-\     /-\ \
      / /-`---'-\ \
       /         \      crab
-Stopping abusive ip addresses by banning them and sharing the ip across multiple hosts
+Stopping abusive ip from brute-forcing your host.
 
 ## How it works
 Crab is a daemon that automatically download a list of abusive ip 
