@@ -144,7 +144,7 @@ loop() {
     doMainCommands
 
     # Check to see how long we actually need to sleep for. If
-    # it's taken more than a minute, then we should just run it
+    # it's taken more than 3 days, then we should just run it
     # anyway.
     last=$(date +%s)
 
@@ -157,13 +157,8 @@ loop() {
 }
 
 log() {
-  # Generic log function.
   echo "$1" >>"$logFile"
 }
-
-################################################################################
-# Parse the command.
-################################################################################
 
 if [ -f "$pidFile" ]; then
   # shellcheck disable=SC2006
